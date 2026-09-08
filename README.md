@@ -81,10 +81,10 @@ This lab includes:
 SELABS/
 │
 ├── LAB1/
-│   └── Lab 1 PDF
+│   └── Lab 1.pdf
 │
 ├── LAB2/
-│   └── Lab 2 PDF
+│   └── Lab 2.pdf
 │
 ├── LAB3/
 │   ├── Lab 3 Component Diagram
