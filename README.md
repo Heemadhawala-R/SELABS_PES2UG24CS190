@@ -144,6 +144,56 @@ The program manages fitness class bookings for activities such as Yoga, HIIT, an
 
 ---
 
+### LAB 6 – Code and Branch Coverage Analysis: Shipping Quotation
+
+This lab focuses on measuring and improving code coverage and branch coverage using Python, `pytest`, and `coverage.py`.
+
+The Shipping Quotation application calculates shipping costs based on transport mode, package weight, hazardous materials, fragile shipments, and express priority. It also monitors container pressure logs to identify potential depressurization leaks.
+
+#### Objectives
+
+- Measure statement and branch coverage.
+- Identify untested statements and decision branches.
+- Develop test cases for normal inputs, invalid inputs, and edge cases.
+- Use automated testing to improve confidence in application behavior.
+
+#### Tools Used
+
+- **Python:** Application implementation and test cases.
+- **pytest:** Automated test execution.
+- **coverage.py:** Statement and branch coverage measurement.
+- **Git and GitHub:** Version control and submission management.
+
+#### Coverage Results
+
+| Metric | Result |
+|---|---:|
+| Code coverage tests passed | 13 |
+| Statement coverage | 100% |
+| Branch coverage tests passed | 19 |
+| Branches covered | 36/36 |
+| Partial branches | 0 |
+| Overall branch coverage | 100% |
+
+*Results are based on the recorded coverage runs for `shipping_quote.py`.*
+
+#### Important Project Files
+
+- `shipping_quote.py` — Shipping quotation and container pressure monitoring functions.
+- `test_shipping_quote.py` — Original starter test file.
+- `CodeCoverageTest_shipping_quote.py` — Test cases for code coverage.
+- `BranchCoverageTest_shipping_quote.py` — Test cases for branch coverage.
+- `CodeCoverageTest_shipping_quote.png` — Code coverage terminal screenshot.
+- `BranchCoverageTest_shipping_quote.png` — Branch coverage terminal screenshot.
+- `README.md` — Lab documentation.
+
+**Folder:** `LAB6/L6_L7_04_shipping_quotation/Lab 6/`
+
+**Technologies:** Python, pytest, coverage.py, Git, and GitHub.
+
+
+---
+
 ## Repository Structure
 
 ```text
@@ -171,6 +221,20 @@ SELABS/
 │
 ├── LAB5/
 │   └── Fitness Club Class Booking Ledger files
+├
+├── LAB6/
+│   └── L6_L7_04_shipping_quotation/
+│       └── Lab 6/
+│           ├── README.md
+│           ├── shipping_quote.py
+│           ├── test_shipping_quote.py
+│           ├── CodeCoverageTest_shipping_quote.py
+│           ├── CodeCoverageTest_shipping_quote.png
+│           ├── BranchCoverageTest_shipping_quote.py
+│           ├── BranchCoverageTest_shipping_quote.png
+│           └── .gitignore
+│
+└── README.md
 │
 └── README.md
 ```
@@ -181,7 +245,7 @@ SELABS/
 
 ## Learning Outcomes
 
-Through these laboratory exercises, I gained practical experience in requirements engineering, UML modelling, Agile project management, software architecture, Python application development, static code analysis, secure coding practices, and version control.
+Through these laboratory exercises, I gained practical experience in requirements engineering, UML modelling, Agile project management, software architecture, Python application development, static code analysis, secure coding practices, automated testing, code and branch coverage analysis, and version control using Git and GitHub.
 
 ## Author
 
