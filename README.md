@@ -192,6 +192,48 @@ The Shipping Quotation application calculates shipping costs based on transport 
 **Technologies:** Python, pytest, coverage.py, Git, and GitHub.
 
 
+# Lab 7 – Fuzz Testing for Input Validation Bugs
+
+## Objective
+To identify and fix input validation bugs using Python's Hypothesis fuzz testing library.
+
+## Tools Used
+- Python 3
+- Hypothesis
+- Pytest
+
+## Functions Tested
+1. `calculate_dimensional_weight()` – Validates package dimensions.
+2. `format_tracking_label()` – Validates and formats tracking codes.
+3. `parse_package_manifest()` – Validates JSON package manifests.
+
+## Implementation
+- Used Hypothesis to generate random and unexpected inputs.
+- Identified input validation errors in all three functions.
+- Implemented defensive input validation and error handling.
+- Added tests for valid and invalid inputs.
+
+## Test Results
+- Hypothesis fuzz tests: 3 passed
+- Additional validation tests: 6 passed
+- **Total: 9 tests passed**
+
+## Execution
+Run the application:
+
+```bash
+python processor.py
+```
+
+Run the tests:
+
+```bash
+python -m pytest test_processor.py -v
+```
+
+## Screenshots
+Refer to the `Lab7_Screenshots` folder for execution outputs and test results.
+
 ---
 
 ## Repository Structure
@@ -224,17 +266,38 @@ SELABS/
 ├
 ├── LAB6/
 │   └── L6_L7_04_shipping_quotation/
-│       └── Lab 6/
+│       ├── Lab 6/
+│       │   ├── README.md
+│       │   ├── shipping_quote.py
+│       │   ├── test_shipping_quote.py
+│       │   ├── CodeCoverageTest_shipping_quote.py
+│       │   ├── CodeCoverageTest_shipping_quote.png
+│       │   ├── BranchCoverageTest_shipping_quote.py
+│       │   ├── BranchCoverageTest_shipping_quote.png
+│       │   └── .gitignore
+│       │
+│       └── Lab 7/
 │           ├── README.md
-│           ├── shipping_quote.py
-│           ├── test_shipping_quote.py
-│           ├── CodeCoverageTest_shipping_quote.py
-│           ├── CodeCoverageTest_shipping_quote.png
-│           ├── BranchCoverageTest_shipping_quote.py
-│           ├── BranchCoverageTest_shipping_quote.png
-│           └── .gitignore
-│
-└── README.md
+│           ├── processor.py
+│           ├── test_processor.py
+│           └── Lab7_Screenshots/
+│               ├── 01_Original_Application_Execution.png
+│               ├── 02_Fuzz_Testing_Failures.png
+│               ├── 03_Fixed_Application_Execution.png
+│               ├── 04_Final_Hypothesis_Test_Results.png
+│               └── 05_Complete_Validation_Test_Results.png
+├── LAB7/
+│   └── L6_L7_04_shipping_quotation/
+│       └── Lab 7/
+│           ├── README.md
+│           ├── processor.py
+│           ├── test_processor.py
+│           └── Lab7_Screenshots/
+│               ├── 01_Original_Application_Execution.png
+│               ├── 02_Fuzz_Testing_Failures.png
+│               ├── 03_Fixed_Application_Execution.png
+│               ├── 04_Final_Hypothesis_Test_Results.png
+│               └── 05_Complete_Validation_Test_Results.png
 │
 └── README.md
 ```
